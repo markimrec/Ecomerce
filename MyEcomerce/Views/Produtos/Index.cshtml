@@ -1,6 +1,7 @@
-﻿
+﻿@model MyEcomerce.Models.Produto
 @{
     ViewData["Produtos"] = "Index";
+    Layout = "~/Pages/_Layout.cshtml";
 }
 
 <h2>Página de produtos</h2>
@@ -20,12 +21,14 @@
 
 
     <p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
-      
+    @Html.DisplayFor(x => x.Id, "Id do fornecedor")
+    @Html.TextBoxFor(x => x.Id)
+
 
 </form>
 
-<audio controls>
+@*<audio controls>
     <source src="D:\Users\marki\Documents\Projetos\MyEcomerce\TheVerve.mp3" type="audio/mpeg">
     Seu navegador não suporta áudio tag.
-</audio>
+</audio>*@
 

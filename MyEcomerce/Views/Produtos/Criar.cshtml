@@ -1,7 +1,25 @@
-﻿
+﻿@model MyEcomerce.Models.Produto
 @{
     ViewData["Title"] = "Criar";
+    Layout = "~/Pages/_Layout.cshtml";
 }
 
 <h2>Essa é a página de criação de produto</h2>
+
+<div class="col-md-12">
+    
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.TextBoxFor(abacaxi => abacaxi.Name, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.TextBoxFor(abacaxi => abacaxi.IdFornecedor, new { @class = "form-control" })
+        </div>
+    </div>
+</div>
+
+
+
 

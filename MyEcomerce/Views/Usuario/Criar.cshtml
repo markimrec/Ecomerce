@@ -1,0 +1,27 @@
+﻿@model MyEcomerce.Models.Usuario
+@{
+    ViewData["Title"] = "Criar";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+
+<h2>Criar</h2>
+
+<div class="form-group">
+
+    @Html.TextBoxFor(x => x.Nome, null, new { @class = "from-control" })
+
+</div>
+
+@{ 
+    
+    
+    /*
+     <form>
+
+    --Pesquisar @Html Helper para criar a tag  form.
+    -- Pesquisar e entender comportamento de um input type submit dentro de um form
+
+
+    </form>
+     */
+}
